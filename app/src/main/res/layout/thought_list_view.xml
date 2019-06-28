@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Justin Loh on 28/6/19 3:44 PM
+  ~ Last modifiled 28/6/19 3:44 PM.
+  ~ Copyright (c) 2019. All rights reserved.
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewUsername" tools:text="Jusloh"
+            android:textColor="@color/colorPrimary" android:textSize="16sp" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewTimestamp" tools:text="Jun 28, 3:49 PM"
+            android:textColor="@color/colorPrimary" android:textSize="12sp"
+            app:layout_constraintTop_toTopOf="@+id/listViewUsername"
+            app:layout_constraintBottom_toBottomOf="@+id/listViewUsername"
+            app:layout_constraintStart_toEndOf="@+id/listViewUsername" android:layout_marginStart="8dp"/>
+    <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewThoughtTxt"
+            tools:text="This is a random thought..."
+            android:textColor="@color/colorPrimary" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/listViewUsername" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/listViewLikesImage"/>
+    <TextView
+            android:text="99"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/listViewNumLikesLbl"
+            android:textColor="@color/colorPrimary" android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@+id/listViewLikesImage" android:layout_marginStart="8dp"
+            app:layout_constraintTop_toTopOf="@+id/listViewLikesImage"
+            app:layout_constraintBottom_toBottomOf="@+id/listViewLikesImage"/>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" app:srcCompat="@drawable/star_icon_filled"
+            android:id="@+id/listViewLikesImage"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/listViewThoughtTxt"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
