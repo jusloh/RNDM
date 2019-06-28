@@ -1,0 +1,9 @@
+<!--
+  ~ Created by Justin Loh on 28/6/19 1:17 PM
+  ~ Last modifiled 27/6/19 3:02 PM.
+  ~ Copyright (c) 2019. All rights reserved.
+  -->
+
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
